@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="container" id="scores">
+        <header>
+            <h1>
+                <span>Rock</span>
+                <span>Paper</span>
+                <span>Scissors</span>
+            </h1>
+            <div class="score-container">
+                <h4>Your Score : <span id="user-score">0</span></h4>
+            </div>
+            <div class="score-container">
+                <h4>Computer Score : <span id="computer-score">0</span></h4>
+            </div>
+        </header>
+
+        <main id="main">
+            <button class="btn-circle btn-paper choice-click" data-choice="paper">
+                <span class="wrapper">
+                    <img src="./../iconimages/icons8-hand-64 1.png" alt="paper-icon" />
+                </span>
+            </button>
+
+            <button class="btn-circle btn-scissors choice-click" data-choice="scissors">
+                <span class="wrapper">
+                    <img src="./../iconimages/17911 1.png" alt="scissors-icon" />
+                </span>
+            </button>
+
+            <button class="btn-circle btn-rock choice-click" data-choice="rock">
+                <span class="wrapper">
+                    <img src="./../iconimages/icons8-fist-67 1.png" alt="rock-icon" />
+                </span>
+            </button>
+        </main>
+        <button class="btn-rules" id="rules">Rules</button>
+        <img class="ruleImg" src="iconimages/Frame 4.png" alt="Rules image" id="rules-image">
+        <button id="close-modal">
+            <img src="./iconimages/X.png" alt="close button" id="close-button" />
+        </button>
+    </div>
+    </div>
+
+
+    <div class="selection" id="selection">
+        <div class="user-selection">
+            <h2>You picked</h2>
+            <button class="btn-circle btn-paper" id="user_select">
+                <span class="wrapper">
+                    <img src="./../iconimages/icons8-hand-64 1.png" alt="paper-icon" />
+                </span>
+            </button>
+        </div>
+
+        <div class="result-section">
+            <h1>YOU <span id="result">win</span></h1>
+            <button id="reset">Play again</button>
+        </div>
+
+        <div class="computer-selection">
+            <h2> Computer picked</h2>
+            <button class="btn-circle btn-paper" id="computer_select">
+                <span class="wrapper">
+                    <img src="./../iconimages/icons8-hand-64 1.png" alt="paper-icon" />
+                </span>
+            </button>
+        </div>
+        <button class="next" id="nextButton">Next</button>
+
+    </div>
+    <div id="hurraypage">
+        <img src="iconimages/trophy.png" alt="trophyimage">
+        <h1 class="hurray-text">HURRAY!!</h1>
+        <p>You won the game</p>
+        <button class="play-again" id="playagain">Play Again</button>
+    <!-- Stars around the text -->
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+    </div>
+
+</body>
+
+</html>
